@@ -3,283 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matzzzeo's Journey to Your Best Self</title>
-    <meta name="description" content="Matzzzeo's blog about physical and mental self-improvement.">
-    <meta name="keywords" content="self-improvement, mental health, physical health, personal growth, motivation, inspiration">
-    <link rel="canonical" href="https://yourwebsite.com/"> <meta name="author" content="Matzzzeo">
-
-    <meta property="og:title" content="Matzzzeo's Journey to Your Best Self">
-    <meta property="og:description" content="Helping you unlock your full potential, both physically and mentally.">
-    <meta property="og:url" content="https://yourwebsite.com/"> <meta property="og:image" content="https://yourwebsite.com/images/thumbnail.jpg"> <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Matzzzeo's Journey to Your Best Self">
-    <meta name="twitter:description" content="Helping you unlock your full potential, both physically and mentally.">
-    <meta name="twitter:url" content="https://yourwebsite.com/"> <meta name="twitter:image" content="https://yourwebsite.com/images/thumbnail.jpg"> <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Wake up!!! - A Personal Blog</title>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
+        /* Basic Reset & Global Styles */
+        body, h1, h2, h3, p, ul, li, figure, figcaption, article, header, footer, main, span {
             margin: 0;
             padding: 0;
-            line-height: 1.7; /* Increased line height for better readability */
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50; /* Darker, more professional header */
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
-        }
-        header h1 {
-            margin-bottom: 0.5rem;
-            font-size: 2.25rem; /* Larger heading */
-        }
-        header p {
-            font-size: 1.1rem;
-            font-weight: 300; /* Lighter font weight for description */
-            opacity: 0.9;
-        }
-        nav ul {
-            padding: 0;
-            list-style: none;
-            text-align: center;
-            margin-top: 1.5rem;
-        }
-        nav ul li {
-            display: inline-block;
-            margin: 0 1.25rem; /* Increased horizontal margin */
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500; /* Medium font weight for nav links */
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            transition: color 0.3s ease; /* Smooth transition */
-        }
-        nav ul li a:hover {
-            color: #f1c40f; /* Highlight on hover */
-        }
-        .container {
-            max-width: 87.5rem; /* 1400px - slightly wider */
-            margin: 2rem auto;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 0.5rem; /* Slightly more rounded corners */
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Very subtle shadow */
-        }
-        .about-me {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .about-me h2 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-        }
-        .about-me img {
-            width: 180px; /* Slightly larger image */
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow to profile image */
-        }
-        .about-me p {
-            font-size: 1.1rem;
-            color: #555;
-        }
-        .blog-posts h2 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            text-align: center;
+            box-sizing: border-box;
         }
 
-        .post {
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean, modern font */
+            line-height: 1.7;
+            background-color: #E6E8EB; /* Light grayish-blue tint for the page background */
+            color: #000000; /* Black text for main content */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer stays at the bottom */
         }
-        .post:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-            margin-bottom: 0;
+
+        .container {
+            width: 90%;
+            max-width: 850px; /* Comfortable reading width */
+            margin: 0 auto; /* Center the content */
+            padding: 25px;
+            flex-grow: 1; /* Allows main content to expand */
         }
-        .post h3 {
-            font-size: 1.5rem;
-            color: #2c3e50;
-            margin-bottom: 0.75rem;
+
+        /* Header Styling */
+        .site-header {
+            background-color: #778899; /* Grayish-blue (LightSlateGray) */
+            padding: 35px 0; /* Slightly increased padding */
+            text-align: center;
+            border-bottom: 4px solid #5F7182; /* Darker shade of grayish-blue */
+            box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1); /* Subtle inner shadow for depth */
         }
-        .post h3 a {
-            color: #2c3e50;
-            text-decoration: none;
-            transition: color 0.3s ease;
+
+        .site-header h1 {
+            color: #FFFFFF; /* White text for the main blog title */
+            font-size: 3em; /* Slightly larger for more impact */
+            font-weight: 700;
+            letter-spacing: 1px; /* Added letter spacing */
+            margin-bottom: 8px; /* Space for subtitle */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
         }
-        .post h3 a:hover {
-            color: #f1c40f;
+
+        .site-header .subtitle {
+            color: #E0E0E0; /* Lighter white/gray for subtitle */
+            font-size: 1.1em;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle shadow for subtitle too */
         }
-        .post .date {
-            color: #7f8c8d;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
+
+        /* Blog Post Styling */
+        .blog-post {
+            background-color: #FFFFFF; /* White background for individual posts */
+            margin-bottom: 40px; /* Space between posts */
+            padding: 30px;
+            border-radius: 10px; /* Slightly rounded corners */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07); /* Subtle shadow for depth */
+            border-left: 7px solid #778899; /* Grayish-blue accent on the left */
+        }
+
+        .blog-post h2 {
+            color: #1a1a1a; /* Very dark gray, almost black, for post titles */
+            font-size: 1.8em; /* Post title size */
+            margin-bottom: 10px;
+        }
+
+        .blog-post .post-meta {
+            font-size: 0.9em;
+            color: #4D4D4D; /* Medium-dark gray for the date */
+            margin-bottom: 20px;
             display: block;
         }
-        .post p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 1.25rem;
+
+        .blog-post p {
+            margin-bottom: 18px;
+            font-size: 1.05em; /* Slightly larger for better readability */
+            color: #000000; /* Ensure paragraph text is black */
         }
-        .post .read-more {
-            display: inline-block;
-            color: #3498db;
+
+        .blog-post p:last-of-type { /* Remove bottom margin from the last paragraph in a post */
+            margin-bottom: 0;
+        }
+
+        .blog-post a {
+            color: #5F7182; /* Link color - darker grayish-blue */
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
-        }
-        .post .read-more:hover {
-            color: #217dbb;
         }
 
-        #contact {
+        .blog-post a:hover,
+        .blog-post a:focus {
+            text-decoration: underline;
+            color: #4A5A6A; /* Even darker blue on hover/focus */
+        }
+
+        /* Footer Styling */
+        .site-footer {
+            background-color: #778899; /* Grayish-blue, matching the header */
+            color: #E0E0E0; /* Light gray text for footer, for contrast with dark background */
             text-align: center;
-        }
-        #contact h2 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-        }
-        #contact p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 1.25rem;
+            padding: 25px 0;
+            margin-top: auto; /* Pushes footer to the bottom */
+            font-size: 0.95em;
+            border-top: 4px solid #5F7182; /* Darker accent */
         }
 
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 1.5rem 0;
-            color: #7f8c8d;
-            border-top: 1px solid #eee;
-        }
-        footer p{
-            font-size: 0.9rem;
+        .site-footer p {
+            margin: 0;
         }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .site-header h1 {
+                font-size: 2.4em; /* Adjusted for new title and effects */
+                letter-spacing: 0.5px;
+            }
+            .site-header .subtitle {
+                font-size: 1em;
+            }
+            .blog-post h2 {
+                font-size: 1.5em;
+            }
             .container {
-                padding: 1.5rem;
+                width: 95%;
+                padding: 15px;
             }
-            nav ul li {
-                display: block;
-                margin: 0.75rem 0;
-            }
-            header h1{
-                font-size: 2rem;
-            }
-            .about-me img {
-                width: 150px;
-                height: 150px;
-            }
-             .about-me h2{
-                font-size: 1.75rem;
-            }
-             .blog-posts h2{
-                 font-size: 1.75rem;
-            }
-            .post h3{
-                font-size: 1.25rem;
+            .blog-post {
+                padding: 20px;
             }
         }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Matzzzeo's Journey to Your Best Self</h1>
-        <p>Inspiring and guiding you to unlock your full potential, every day.</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <h1>Wake up!!!</h1>
+        <p class="subtitle">By: Arath Mateo Villarroel</p>
     </header>
 
     <div class="container">
-        <section id="home" class="about-me">
-            <img src="placeholder-profile.jpg" alt="Matzzzeo Profile" class="profile-image">
-            <h2>Welcome! I'm Matzzzeo.</h2>
-            <p>
-                I'm dedicated to helping you become the best version of yourself, both physically and mentally.  This blog is a resource for strategies, insights, and inspiration on your journey to personal growth.  Join me as we explore how to cultivate a strong mind, a healthy body, and a fulfilling life.
-            </p>
-        </section>
+        <main id="main-content">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Matzzzeo! I believe that everyone has the potential for greatness. My journey has led me to discover the power of combining physical and mental wellness to achieve a balanced and thriving life.  I'm passionate about sharing what I've learned and empowering you to take control of your own path to self-improvement.  I'll be sharing my experiences, insights, and practical advice on topics ranging from fitness and nutrition to mindfulness and personal development.  I'm excited to connect with you and support you on your journey!
-            </p>
-            <p>
-                My philosophy is based on the idea that consistent, small steps can lead to significant transformations over time. I'm here to provide you with the tools and encouragement you need to make those steps, celebrate your progress, and build a sustainable foundation for lifelong growth.
-            </p>
-        </section>
+            <article class="blog-post">
+                <h2>Ninth week update!</h2>
+                <span class="post-meta">Published on: Friday, May 16, 2025</span>
+                <p>This new book, "How to Win Friends & Influence People," is already proving to be transformative; my communication skills feel like they're leveling up daily, making interactions smoother and more impactful. My friends and I had a great time picking out new suits for an upcoming conference, and we even caught a soccer game afterward, which was a perfect way to unwind. While this week was a bit slower in terms of sales volume for our reselling business, we managed to sell some higher-ticket items, which balanced out our profits to the usual consistent weekly amount. Boxing has truly become a cornerstone in my life, providing a new motivation that has positively impacted me physically, mentally, and spiritually – I feel like I'm at my peak. Life is genuinely great right now, and I'm looking forward to three interviews for part-time sales jobs next week, eager to apply my new skills.</p>
+            </article>
 
-        <section id="blog" class="blog-posts">
-            <h2>Latest Blog Posts</h2>
+            <article class="blog-post">
+                <h2>Eighth week update!</h2>
+                <span class="post-meta">Published on: Friday, May 9, 2025</span>
+                <p>Life is definitely on an upswing as I just submitted my two-week notice at my current job, ready for a new chapter. The reselling business continues to be a solid source of income, with each of us consistently earning around $400 a week, and we're now excitedly planning a trip to Miami to learn from a friend who's successful in e-commerce, hoping to gain insights for our own future ventures in that space. On the topic of big purchases, my mom and I had a serious talk about the motorcycle; she has her reservations, but we've come to a potential agreement that if things go well, we might buy a car together instead, aiming for a 2018 Audi Q5 which would be an amazing and practical upgrade for both of us. It feels good to be making these plans and seeing tangible results from our hard work and discipline.</p>
+            </article>
 
-            <div class="post">
-                <h3><a href="morning-routine.html">Embracing the Power of Morning Routines</a></h3>
-                <span class="date">May 5, 2025</span>
-                <p>
-                    Discover how a consistent and positive morning routine can set the stage for a productive and fulfilling day.  We'll explore essential elements and practical tips to help you design a morning routine that works for you.
-                </p>
-                <a href="morning-routine.html" class="read-more">Read More</a>
-            </div>
+            <article class="blog-post">
+                <h2>Seventh week update!</h2>
+                <span class="post-meta">Published on: Friday, May 2, 2025</span>
+                <p>The new book, "How to Win Friends & Influence People," is absolutely amazing; Dale Carnegie's insights into human relations are timeless and incredibly practical, and I'm already trying to apply some principles in my daily interactions. Our reselling business had a particularly good week with increased profits, so my friends and I decided to celebrate with a friendly game of soccer. Unfortunately, during the game, I had a bit of an accident while playing defender and ended up breaking a tooth, but thankfully, I was able to get my front tooth reconstructed the same day, so it was a quick fix. Despite that mishap, life is starting to feel genuinely great, though I'm realizing I need a change at work and would love to transition into sales to further hone my skills, so I'm seriously considering giving my two-week notice soon. We also attended another sales conference, and it was inspiring to be surrounded by so many people with a similar growth mindset.</p>
+            </article>
 
-            <div class="post">
-                <h3><a href="mind-body-connection.html">The Mind-Body Connection: Fueling Your Mental Strength Through Physical Activity</a></h3>
-                <span class="date">May 1, 2025</span>
-                <p>
-                    Explore the profound relationship between your physical and mental well-being.  Learn how exercise and movement can positively impact your mood, focus, and overall mental resilience.
-                </p>
-                <a href="mind-body-connection.html" class="read-more">Read More</a>
-            </div>
-            </section>
+            <article class="blog-post">
+                <h2>Sixth week update!</h2>
+                <span class="post-meta">Published on: Friday, April 25, 2025</span>
+                <p>I finally finished "The Compound Effect," and it has genuinely taught me so much about the power of small, consistent actions; the principles in that book have become a real guide for me. Next up, I'm diving into "How to Win Friends & Influence People" by Dale Carnegie, which I'm really excited about. Amazingly, I made a great friend at the gym, a boxing and fitness trainer, who saw my potential and has generously offered to help with my training for free! On the business front, sales are steady, providing a consistent profit each week which is fantastic for saving up – I'm seriously thinking about buying a motorcycle, maybe a Kawasaki Ninja 400 or 500, which has been a dream since I was 13, to make commuting to school, work, and the gym easier. My communication skills have solidified into a habit now, and I'm feeling more confident than ever in my interactions, which is a fantastic feeling.</p>
+            </article>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                I'd love to hear from you!  If you have any questions, feedback, or just want to connect, please don't hesitate to reach out.  You can contact me via email at <a href="mailto:matzzzeo@email.com">matzzzeo@email.com</a> or connect with me on social media:
-            </p>
-            <p>
-                <a href="https://twitter.com/matzzzeo" target="_blank">Twitter</a> | <a href="https://instagram.com/matzzzeo" target="_blank">Instagram</a> | <a href="https://facebook.com/matzzzeo" target="_blank">Facebook</a>
-            </p>
-        </section>
+            <article class="blog-post">
+                <h2>Fifth week update!</h2>
+                <span class="post-meta">Published on: Friday, April 18, 2025</span>
+                <p>The concert this week was an absolute blast; being front row with friends was the perfect stress reliever and exactly what we needed. Riding that high, I've decided to seriously commit to boxing, incorporating dedicated cardio and experimenting with explosive routines, which feels incredibly purposeful and challenging in a new way. This clarity also led me to make the tough but necessary decision to end a few friendships that weren't aligning with my goals, allowing me to focus more on the reselling venture with my two like-minded friends. "The Compound Effect" is nearing its end and continues to be a fantastic guide, and I'm genuinely seeing the positive impact of using more formal language – conversations feel more substantial, and I believe people are taking me more seriously as a result. It's a small shift, but it feels significant in my personal and professional interactions.</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>Fourth week update!</h2>
+                <span class="post-meta">Published on: Friday, April 11, 2025</span>
+                <p>I'm still making progress in "The Compound Effect," and a recent chapter on momentum really hit home, reflecting my current efforts. On a brighter note, my friends and I bought tickets for a concert next week, which is a much-needed exciting break from the work and school grind. The gym, however, continues to be a source of frustration with that persistent feeling of emptiness, but my mom suggested trying soccer again or boxing to potentially reignite my motivation by giving my workouts a new purpose. Professionally, we're taking the sales conferences more seriously and have even started reselling some products, generating a bit of side income which feels great. It's becoming clear how putting a little faith into action can truly shift things, and I feel a quiet strength building within me again from these small wins.</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>Third week update!</h2>
+                <span class="post-meta">Published on: Friday, April 4, 2025</span>
+                <p>It's proving surprisingly challenging to drop informal language at 18, as slang often slips out, but I'm determined to stick with it for long-term benefits. The gym remains a place of mere discipline rather than enthusiasm, and I'm starting to wonder if this feeling of just going through the motions will be a long-term thing I need to accept. On a more uplifting note, "The Compound Effect" continues to be an insightful read, particularly a section on tracking habits, and I've also been reconnecting with my Catholic faith by praying three times daily. This practice has brought unexpected peace and has noticeably improved my patience and connection with my family, which feels like a much-needed grounding influence in my life.</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>Second week update!</h2>
+                <span class="post-meta">Published on: Friday, March 28, 2025</span>
+                <p>This week, I started reading "The Compound Effect" by Darren Hardy, and its message about small, consistent choices leading to big results is already resonating deeply with my current journey. My efforts to be more sociable are paying off, as I feel my communication skills improving and I'm genuinely enjoying connecting with new people. This has also inspired me to focus on using more formal language, aiming for the polished and impactful communication style I've observed in successful sales advisors. The gym, however, remains a challenge; that sense of emptiness lingers, and it's purely discipline, not enjoyment, that gets me there each day, though I'm hopeful this is just a temporary phase.</p>
+            </article>
+
+            <article class="blog-post">
+                <h2>My new life begins</h2>
+                <span class="post-meta">Published on: Friday, March 21, 2025</span>
+                <p>So, here it is – my first official blog post! It feels a bit strange, putting my thoughts out here on the internet, but also exciting. The start of this year marked a real turning point for me. I decided it was time to actively change some habits, to build a life I’m truly proud of, and I figured what better way to keep track of this journey, the ups and downs, the lessons learned, than by documenting it all? So, "blogging" it is! My plan is to post every Friday, sharing experiences and reflections from the week. Consider this a public record of my attempts to grow and evolve.</p>
+                <p>This week felt like a milestone in one area already: I finally finished reading "Rich Dad Poor Dad" by Robert T. Kiyosaki! It might not seem like a big deal to some, but for me, it is. I've always struggled with reading consistently; I’d start books with good intentions but rarely see them through. This time, I stuck with it, and I feel like I’ve genuinely built the habit. The book itself was eye-opening, shifting my perspective on money and work. Beyond reading, I've also been pushing myself to be more social. Little things, like complimenting someone on their outfit or striking up a conversation with a classmate I don't know well. It's amazing how a small, positive interaction can brighten your day and theirs. Yesterday, I told someone in my history class I liked their band t-shirt, and we ended up having a great chat about music.</p>
+                <p>However, not everything is sunshine and rainbows. I’ve been feeling a bit empty inside lately, particularly when it comes to the gym. I used to love working out, the energy, the progress. But for the past few weeks, it’s felt like a chore. Even waking up at 5:30 AM, a routine I've had locked down since September last year, suddenly doesn't have that same motivating kick. It’s a weird feeling, this disconnect from something that used to be such a core part of my routine and identity. I'm hoping it's just a temporary slump, but it's definitely on my mind.</p>
+            </article>
+
+        </main>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Matzzzeo's Journey to Your Best Self | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms of Service</a></p>
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> Arath Mateo Villarroel. All rights reserved.</p>
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        // Simple script to update the year in the footer automatically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
+
 </body>
 </html>
